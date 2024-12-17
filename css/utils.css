@@ -254,6 +254,16 @@ a {
     background-color: #545b62;
 }
 
+.btn-white {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.btn-white:hover {
+    background-color: #f1f1f1;
+}
+
 .fade-in {
     animation: fadeIn 1s ease-in forwards;
 }
@@ -279,6 +289,22 @@ a {
 
     100% {
         opacity: 0;
+    }
+}
+
+.slide-in-up {
+    animation: slideInUp 1s ease-in-out forwards;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%); /* Mulai dari bawah */
+        opacity: 0; /* Transparan di awal */
+    }
+
+    100% {
+        transform: translateY(0); /* Posisi normal */
+        opacity: 1; /* Muncul penuh */
     }
 }
 
