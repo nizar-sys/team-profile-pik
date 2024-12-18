@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Profile</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/draft_blog_detail.css" />
+  </head>
+  <body>
+    <header class="mt-3">
+      <div class="nav-wrapper">
+        <a class="logo-container" href="./home_page.html">
+          <img class="logo-nav" src="./images/logo_nav.png" alt="Logo" />
+        </a>
+        <nav>
+          <input class="hidden" type="checkbox" id="menuToggle" />
+          <label class="menu-btn" for="menuToggle">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+          </label>
+          <div class="nav-container">
+            <ul class="nav-tabs">
+              <li class="nav-tab">
+                <a class="text-dark" href="./home_page.html">Home</a>
+              </li>
+              <li class="nav-tab">
+                <a href="./home_page.html#our-team" class="text-dark"
+                  >Our Team</a
+                >
+              </li>
+              <li class="nav-tab">
+                <a href="./blog_list.html" class="text-dark">Materials</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="p-5 container slide-in-up">
+        <div class="cs-blog-detail">
+          <div class="cs-main-post">
+            <figure>
+              <img alt="Database Cover" src="./images/bg database.jpg" style ="border-radius: 20px;"/>
+            </figure>
+          </div>
+
+          <div class="cs-tags">
+            <ul>
+              <li>
+                <div class="text-dark tag-item" style="background: transparent;">Download</div>
+              </li>
+              <li>
+                <a
+                  class="text-dark tag-item"
+                  href="./ms-word.html"
+                >
+                  <img src="./images/ppt.png" alt="PPT Icon" /> PPT
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-dark tag-item"
+                  href="./ms-word.html"
+                >
+                  <img src="./images/pdf.png" alt="PDF Icon" /> PDF
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cs-post-option-panel">
+            <div class="rich-editor-text">
+              <h1 class="text-dark text-center mb-3">Database</h1>
+              <p style="text-align: justify;">
+                Database adalah kumpulan data yang terorganisir dan disimpan secara sistematis dalam bentuk yang memudahkan akses, pengelolaan, dan pembaruan informasi. Biasanya, database digunakan untuk menyimpan data yang saling terkait dan dapat diakses atau dimodifikasi menggunakan sistem manajemen basis data (DBMS - Database Management System).
+              </p>
+              <br>
+              <ul style="list-style: none">
+                <li>
+                  <h2>1. Elemen Utama Database</h2>
+                  <div class="ml-5 mb-3">
+                    <table>
+                      <tr>
+                        <td
+                          style="
+                            width: 50%;
+                            vertical-align: top;
+                            padding-right: 0px;
+                          "
+                        >
+                          <ul style="text-align: justify;">
+                            <li>Tabel: struktur utama dalam database yang menyimpan data dalam bentuk baris dan kolom</li>
+                            <li>Baris (Record): Setiap baris di dalam tabel mewakili satu entitas atau item data lengkap. Misalnya, satu baris bisa berisi informasi tentang satu pelanggan atau satu produk.</li>
+                            <li>Kolom (Field): Kolom berisi atribut atau karakteristik data tertentu yang akan disimpan. Sebagai contoh, pada tabel pelanggan, kolom bisa mencakup nama, alamat, nomor telepon, dll.</li>
+                            <li>Primary Key: kolom atau kombinasi kolom yang secara unik mengidentifikasi setiap baris dalam tabel. Tidak ada dua baris dalam tabel yang dapat memiliki nilai primary key yang sama.</li>
+                            <li>Foreugn Key: kolom yang menghubungkan satu tabel dengan tabel lain, menciptakan relasi antar data. Foreign key berfungsi untuk menjaga konsistensi data di antara tabel yang berbeda.</li>
+                            </ul>
+                        </td>
+                        
+                      
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <h2>2. Jenis-jenis Database</h2>
+                  <div>
+                    <ol class="ml-5 mb-3" style="text-align: justify;">
+                        <li> <strong>Database relasional</strong>, menyimpan data dalam tabel yang saling terhubung satu sama lain. Sistem manajemen basis data relasional (RDBMS) yang populer termasuk MySQL, PostgreSQL, dan Oracle.</li>
+                        <li> <strong>Database NoSQL</strong>, digunakan untuk data yang tidak terstruktur atau data yang memerlukan skalabilitas tinggi. Beberapa jenis database NoSQL meliputi MongoDB, Cassandra, dan Redis.</li>
+                        <li> <strong>Database terdistribusi</strong>, adalah jenis database yang terdiri dari beberapa server yang bekerja bersama untuk menyimpan dan mengelola data. Hal ini memungkinkan penyimpanan data lebih besar dan skalabilitas yang lebih baik.</li>
+                     </ol>
+                  </div>
+                </li>
+                <li>
+                  <h2>3. Fungsi Database</h2>
+                  <div>
+                    <ul class="ml-5 mb-3" style="text-align: justify;">
+                        <li> <strong>Penyimpanan Data:</strong> Menyimpan informasi secara terstruktur untuk memudahkan pencarian dan pengelolaan.</li>
+                        <li> <strong>Keamanan:</strong> Menyediakan kontrol akses dan perlindungan data agar hanya pengguna yang berwenang yang bisa mengakses atau memodifikasi data.</li>
+                        <li> <strong>Pemrosesan Transaksi:</strong> Menjamin integritas dan konsistensi data saat melakukan perubahan, seperti dalam aplikasi perbankan.</li>
+                        <li> <strong>Analisis dan Laporan:</strong> Memungkinkan analisis data dan pembuatan laporan berdasarkan informasi yang disimpan.</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <h2>4. Contoh Penggunaan Database</h2>
+                  <div>
+                    <ul class="ml-5 mb-3" style="text-align: justify;">
+                        <li> <strong>E-commerce:</strong>  Menyimpan informasi tentang produk, pelanggan, pesanan, dan transaksi.</li>
+                        <li> <strong>Aplikasi Perbankan:</strong> Menyimpan data nasabah, saldo, riwayat transaksi, dll.</li>
+                        <li> <strong>Sistem Manajemen Rumah Sakit:</strong> Menyimpan data pasien, dokter, jadwal kunjungan, dan rekam medis.</li>
+                  </div>
+                </li>
+              </ul>
+              <h1 class="text-dark text-left">Kesimpulan</h1>
+              <p style="text-align: justify;">
+                Database adalah komponen penting dalam pengelolaan informasi dalam dunia digital saat ini. Dari aplikasi sederhana hingga sistem besar yang melibatkan ribuan transaksi, database memainkan peran utama dalam menyimpan dan mengelola data secara efisien. Pemilihan jenis database yang tepat dan pengelolaannya yang baik akan memastikan data dapat diakses, diproses, dan dikelola dengan cepat dan aman.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+          <span> About US</span>
+          Hi, <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis
+          expedita accusamus! Excepturi consequuntur autem, temporibus maxime
+          cumque blanditiis omnis dolores ex facere reprehenderit rerum sed
+          porro cupiditate ratione dignissimos quaerat possimus iusto.
+          Reiciendis amet eum corporis assumenda, pariatur consequuntur nihil
+          iure dicta possimus earum dolor, recusandae deserunt placeat nam!
+        </p>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span> Who We Are ?</span> Kelompok 2</p>
+        </div>
+      </div>
+      <div class="footer-right col-md-4 col-sm-6">
+        <h2>
+          <img class="logo" src="./images/logo_nav.png" alt="Logo" />
+        </h2>
+        <p class="menu">
+          <a href="#"> Home</a> | <a href="#our-team"> Our Team</a> |
+          <a href="#"> Materials</a>
+        </p>
+        <p class="name text-light">Kelompok 2 &copy; PIK</p>
+      </div>
+    </footer>
+  </body>
+</html>
